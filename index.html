@@ -18,22 +18,52 @@
     /* Remove the jumbotron's default bottom margin */ 
      .jumbotron {
       margin-bottom: 0;
+       background-color: #C90000
+
     }
-   
+
+   .main {
+    color: #222222;
+   }
     /* Add a gray background color and some padding to the footer */
     footer {
 	  background-color: #f2f2f2;
       padding: 25px;
+    }
+    .bio {
+      font-size: 20px;
     }
   </style>
 </head>
 <body>
 <a href="http://saasmath.seattleacademy.org/giuliobianco/winter16c.html" target="_blank">Back</a>
 <div class="jumbotron">
-  
-<h3>Staff and Faculty Biographies</h3>
+  <div class="container text-center">
+    <h1 class="main">Seattle Academy Teachers</h1>
+    <p>Click on links to read bios</p>
+  </div>
 </div>
 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">About SAAS</a>
+            <a class="navbar-brand" href="#">Admissions</a>
+      <a class="navbar-brand" href="#">Courses</a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Staff/Teachers</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <div class="container">    
   <div class="row">
@@ -41,21 +71,21 @@
       <div class="panel panel-primary">
         <div class="panel-heading">Barton Truscott</div>
         <div class="panel-body"><img src="http://saasmath.seattleacademy.org/facultypics/Truscott-Barton.jpg" class="img-circle" style="width:100%" alt="Image"></div>
-        <div class="panel-footer"><a>Click here to read bio...</a></div>
+        <div class="panel-footer"><a data-toggle="modal" data-target="#firstModal">Click here to read bio...</a></div>
       </div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-primary">
         <div class="panel-heading">James Watson</div>
         <div class="panel-body"><img src="http://saasmath.seattleacademy.org/facultypics/Watson-James.jpg" class="img-circle" style="width:100%" alt="Image"></div>
-        <div class="panel-footer"><a>Click here to read bio...</a></div>
+        <div class="panel-footer"><a data-toggle="modal" data-target="#secondModal">Click here to read bio...</a></div>
       </div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-primary">
         <div class="panel-heading">Gary Anderson</div>
         <div class="panel-body"><img src="http://saasmath.seattleacademy.org/facultypics/Anderson-Gary.jpg" class="img-circle" style="width:100%" alt="Image"></div>
-        <div class="panel-footer"><a>Click here to read bio...</a></div>
+        <div class="panel-footer"><a data-toggle="modal" data-target="#thirdModal">Click here to read bio...</a></div>
       </div>
     </div>
   </div>
@@ -67,21 +97,21 @@
       <div class="panel panel-primary">
         <div class="panel-heading">Sarah Smith</div>
         <div class="panel-body"><img src="http://saasmath.seattleacademy.org/facultypics/Smith-Sarah.jpg" class="img-circle" style="width:100%" alt="Image"></div>
-        <div class="panel-footer"><a>Click here to read bio...</a></div>
+        <div class="panel-footer"><a data-toggle="modal" data-target="#fourthModal">Click here to read bio...</a></div>
       </div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-primary">
         <div class="panel-heading">Kate Kerr</div>
         <div class="panel-body"><img src="http://saasmath.seattleacademy.org/facultypics/Kerr-Kate.jpg" class="img-circle" style="width:100%" alt="Image"></div>
-        <div class="panel-footer"><a>Click here to read bio...</a></div>
+        <div class="panel-footer"><a data-toggle="modal" data-target="#fifthModal">Click here to read bio...</a></div>
       </div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-primary">
         <div class="panel-heading">Melinda Mueller</div>
         <div class="panel-body"><img src="http://saasmath.seattleacademy.org/facultypics/Mueller-Melinda.jpg" class="img-circle" style="width:100%" alt="Image"></div>
-        <div class="panel-footer"><a>Click here to read bio...</a></div>
+        <div class="panel-footer"><a data-toggle="modal" data-target="#sixthModal">Click here to read bio...</a></div>
       </div>
     </div>
   </div>
@@ -95,5 +125,94 @@
   </form>
 </footer>
 
+<!-- .modal -->
+    <div id="firstModal" class= "modal fade" >
+        <div class="modal-dialog">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;
+                    </button>
+                    <h5>About Barton Truscott</h5>
+                </div> 
+                <div class = "modal-body">
+                    <p class="bio">(History; Coach), B.A., Wesleyan University; M.A.T., Occidental College. Barton spent ten years at Charles Wright Academy in Tacoma, where he served as history department co-chair. Prior to his stint at Charles Wright, he was a teacher and administrator at two independent schools in California. His teaching focus has been U.S. history, including AP curriculum. Barton has also played competitive tennis and squash over the years and at one time long ago he sang in a professional boys’ choir. In 2000, he published a book on economics activities for high school teachers and students.</p>
+                </div>
+        </div>
+    </div>
+    </div>
+
+       <div id="secondModal" class= "modal fade" >
+        <div class="modal-dialog">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;
+                    </button>
+                    <h5>About James Watson</h5>
+                </div> 
+                <div class = "modal-body"> 
+                    <p class="bio"> (English), B.A., Vanderbilt University; M.A., University of Montana. James taught elementary and intermediate Spanish at the University of Montana prior to coming to Seattle Academy. He also taught intermediate English classes in Merida, Venezuela at the Institute of International Studies and Modern Languages. In his spare time, James has led student summer trips to Central America, including trips to Costa Rica and Guatemala, and he enjoys fly-fishing and partner-dancing.</p>
+                </div>
+        </div>
+    </div>
+    </div>
+
+<div id="thirdModal" class= "modal fade" >
+        <div class="modal-dialog">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;
+                    </button>
+                    <h5>About Gary Anderson</h5>
+                </div> 
+                <div class = "modal-body"> 
+                    <p class="bio">(Mathematics), B.A. and B.S., University of Washington; M.I.T., Seattle University. A nationally recognized innovator in the application of the cutting-edge learning platform Moodle, Gary adds another impressive honor to his dossier, having been named to the select, national, NAIS Teachers of the Future program. Among his many Seattle Academy accomplishments, Gary has been involved in the implementation of the advanced Mathematica software into Seattle Academy’s high school curriculum and teaches a course that allows students to earn college credit for their high school work in Calculus.</p>
+                </div>
+        </div>
+    </div>
+    </div>
+<div id="fourthModal" class= "modal fade" >
+        <div class="modal-dialog">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;
+                    </button>
+                    <h5>About Sarah Smith</h5>
+                </div> 
+                <div class = "modal-body"> 
+                    <p class="bio">(Learning Support), B.A., Emory University; certification, Oglethorpe University. Sarah operated her own company for several years prior to arriving at Seattle Academy, tutoring in math, science, English, and history, as well as conducting SAT preparation classes. She taught math and science at Seattle’s Meany Middle School when she arrived in Seattle from Georgia and, before that, Boston, where she taught middle school math and science. Joining the SAAS ranks of multi-faceted faculty and staff, Sarah has also been a member of the United States national rowing team, and was an alternate on the United States Olympic Rowing Team in the Athens Olympic Games in 2004.</p>
+                </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="fifthModal" class= "modal fade" >
+        <div class="modal-dialog">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;
+                    </button>
+                    <h5>About Kate Kerr</h5>
+                </div> 
+                <div class = "modal-body"> 
+                    <p class="bio">(Learning Support), B.S., Wheaton College; M.S., Northern Illinois University. Previous to SAAS, Katherine served as a special education teacher at Lakeland Union High School (WI). She has also designed and implemented curriculum for outdoor educational and leadership wilderness experiences and facilitated small groups in team building and adventure challenges. She is a member of the Mountaineers and has taken numerous mountaineering courses as well as low ropes/high ropes training. She has been a board member for the Literacy Task Force of Northern Wisconsin, a member of the Philanthropic Education Organization, and has competed in the Ski-to-Sea Fundraiser for Peak 7.</p>
+                </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="sixthModal" class= "modal fade" >
+        <div class="modal-dialog">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;
+                    </button>
+                    <h5>About Melinda Mueller</h5>
+                </div> 
+                <div class = "modal-body"> 
+                    <p class="bio"> (Science), B.S., University of Washington; M.S., Central Washington University. Says Melinda, “Teaching is the only thing other than writing that is never tedious. It’s challenging on so many levels–intellectually, intuitively, creatively, and physically. I have to draw on every talent.” A founding Seattle Academy faculty member, she is both a scientist and a published poet. Melinda has been the lead teacher for DNA workshops at the Fred Hutchinson Cancer Research Center and has written nationally-published health brochures for students. She has been honored for her work in creating a partnership between Seattle Academy and the Fred Hutchinson Cancer Research Center and is a lead teacher for their Science Education Partnership program.</p>
+                </div>
+        </div>
+    </div>
+    </div>
 </body>
 </html>
